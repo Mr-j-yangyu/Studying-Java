@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/studying-base/studying-algorithm/studying-algorithm.iml" filepath="$PROJECT_DIR$/studying-base/studying-algorithm/studying-algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-base/studying-base.iml" filepath="$PROJECT_DIR$/studying-base/studying-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-base/studying-common/studying-common.iml" filepath="$PROJECT_DIR$/studying-base/studying-common/studying-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-database/studying-database.iml" filepath="$PROJECT_DIR$/studying-database/studying-database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-dubbo/studying-dubbo.iml" filepath="$PROJECT_DIR$/studying-dubbo/studying-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-base/studying-else/studying-else.iml" filepath="$PROJECT_DIR$/studying-base/studying-else/studying-else.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-base/studying-guava/studying-guava.iml" filepath="$PROJECT_DIR$/studying-base/studying-guava/studying-guava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-base/studying-java8/studying-java8.iml" filepath="$PROJECT_DIR$/studying-base/studying-java8/studying-java8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-parent.iml" filepath="$PROJECT_DIR$/studying-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-database/studying-redis/studying-redis.iml" filepath="$PROJECT_DIR$/studying-database/studying-redis/studying-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-springclound/studying-springclound.iml" filepath="$PROJECT_DIR$/studying-springclound/studying-springclound.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-base/studyingalgorithm.iml" filepath="$PROJECT_DIR$/studying-base/studyingalgorithm.iml" />
+    </modules>
+  </component>
+</project>

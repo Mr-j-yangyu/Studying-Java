@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="studying-algorithm" />
+        <module name="studying-common" />
+        <module name="studying-dubbo" />
+        <module name="studying-else" />
+        <module name="studying-guava" />
+        <module name="studying-java8" />
+        <module name="studying-redis" />
+        <module name="studying-springclound" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="studying-algorithm" target="1.8" />
+      <module name="studying-base" target="1.8" />
+      <module name="studying-common" target="1.8" />
+      <module name="studying-database" target="1.5" />
+      <module name="studying-dubbo" target="1.5" />
+      <module name="studying-else" target="1.8" />
+      <module name="studying-guava" target="1.8" />
+      <module name="studying-java8" target="1.8" />
+      <module name="studying-parent" target="1.5" />
+      <module name="studying-redis" target="1.5" />
+      <module name="studying-springclound" target="1.5" />
+      <module name="studyingalgorithm" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

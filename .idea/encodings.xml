@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/studying-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/studying-base/studying-algorithm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/studying-base/studying-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/studying-base/studying-else" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/studying-base/studying-guava" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/studying-base/studying-java8" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/studying-database" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/studying-dubbo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/studying-springclound" charset="UTF-8" />
+  </component>
+</project>
