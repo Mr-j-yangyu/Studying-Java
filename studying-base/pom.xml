@@ -10,9 +10,10 @@
     <modules>
         <module>studying-guava</module>
         <module>studying-java8</module>
-        <module>studying-else</module>
         <module>studying-common</module>
         <module>studying-algorithm</module>
+        <module>studying-spring</module>
+        <module>studying-jdk</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -26,6 +27,8 @@
         <fastjson.version>1.2.8</fastjson.version>
         <lomback.version>1.16.12</lomback.version>
         <guava.version>18.0</guava.version>
+        <srping.version>4.3.7.RELEASE</srping.version>
+        <apache.commons>3.4</apache.commons>
         <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
         <maven-war-plugin.version>3.0.0</maven-war-plugin.version>
         <maven-resources-plugin.version>2.6</maven-resources-plugin.version>
@@ -46,6 +49,36 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${srping.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aspects</artifactId>
+                <version>${srping.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${srping.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${srping.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${srping.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${apache.commons}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

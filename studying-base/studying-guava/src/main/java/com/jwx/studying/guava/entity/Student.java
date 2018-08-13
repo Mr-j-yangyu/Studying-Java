@@ -13,8 +13,6 @@ import lombok.Data;
  * @version 1.0, 2018/7/6
  */
 
-@Data
-@Builder
 public class Student {
 
     /**
@@ -42,6 +40,47 @@ public class Student {
      */
     private Integer sex;
 
+    public Student(Integer id,String name){
+        this.id = id;this.name = name;
+    }
 
+    public Integer getId() {
+        return id;
+    }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Double getScore() {
+        return score;
+    }
+
+    public void setScore(Double score) {
+        this.score = score;
+    }
+
+    public Integer getYears() {
+        return years;
+    }
+
+    public void setYears(Integer years) {
+        this.years = years;
+    }
+
+    public Integer getSex() {
+        return sex;
+    }
+
+    public void setSex(Integer sex) {
+        this.sex = sex;
+    }
 }

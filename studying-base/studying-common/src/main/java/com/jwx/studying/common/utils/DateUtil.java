@@ -1,5 +1,9 @@
 package com.jwx.studying.common.utils;
 
+import com.alibaba.fastjson.JSON;
+import com.google.common.collect.Lists;
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.lang3.time.DateUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -8,15 +12,12 @@ import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.TimeZone;
+import java.util.*;
 
 /**
- * PackageName:PACKAGE_NAME
+ * PackageName:com.jwx.studying.common.utils
  * FileName: DateUtil.java
- * Description: TODO
+ * Description: 日期工具类
  * Copyright: Copyright (c)2018
  * Company: songxiaocai
  *
@@ -653,7 +654,8 @@ public class DateUtil {
     static {
         cldr.setTimeZone(TimeZone.getTimeZone("GMT+9:00"));
     }
-    public static void main(String[] args){
-          System.out.println(DateUtil.addDate(new Date(),1));
-    }
+        public static void main(String[] args){
+
+
+        }
 }

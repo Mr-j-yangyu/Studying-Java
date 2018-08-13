@@ -1,0 +1,31 @@
+server:
+  port: 8895
+
+#运行暴露端点信息，允许被监控
+#endpoints:
+#  shutdown:
+#    enabled: true
+
+eureka:
+  instance:
+    preferIpAddress: true   #将IP注册到Eureka Server上，默认主机名。
+    instance-id: ${spring.cloud.client.ip-address}:${server.port} #注册名，默认（{spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:
+                                                                      # ${server.port} 与 feign客户端服务配置地址连接
+  client:
+      serviceUrl:
+        defaultZone: http://${spring.cloud.client.ip-address}:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" #暴露所有端点(/info,/health,/env,/beans)
+       # exclude: 排除，，端点
+  endpoint:
+    health:
+       show-details: ALWAYS
+
+
+spring:
+  application:
+    name: springcloud-service   #服务名

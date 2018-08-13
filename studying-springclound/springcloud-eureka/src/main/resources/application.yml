@@ -1,0 +1,19 @@
+# 单点
+server.port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false  #是否向服务注册中心注册自己
+    fetch-registry: false       #是否检索服务
+    serviceUrl:
+      defaultZone: http://${spring.cloud.client.ip-address}:${server.port}/eureka/
+
+spring:
+  application:
+    name: eruka-server
+
+  cloud:
+      inetutils:
+        ignored-interfaces: # 忽略网卡, 支持正则表达式
+          - en0
+          - eth0

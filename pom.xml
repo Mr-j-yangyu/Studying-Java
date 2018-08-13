@@ -12,6 +12,7 @@
         <module>studying-base</module>
         <module>studying-springclound</module>
         <module>studying-database</module>
+        <module>studying-design</module>
     </modules>
     <packaging>pom</packaging>
     <name>myself study</name>

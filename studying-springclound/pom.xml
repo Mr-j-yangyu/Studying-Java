@@ -2,14 +2,29 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>studying-parent</artifactId>
-        <groupId>com.jwx</groupId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <groupId>com.jwx</groupId>
     <artifactId>studying-springclound</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <description>
+            熔断器spring-cloud-starter-netflix-hystrix
+            feign客户端 spring-cloud-starter-openfeign
+            eureka注册中心 spring-cloud-starter-netflix-eureka-server
+            zuul网关  spring-cloud-starter-netflix-zuul
+            eurela客户端 spring-cloud-starter-netflix-eureka-client
+            springboot admin管理平台服务端 spring-boot-admin-starter-server
+    </description>
+
+    <modules>
+        <module>springcloud-eureka</module>
+        <module>springcloud-zuul</module>
+        <module>springcloud-feignclient</module>
+        <module>springcloud-service</module>
+        <module>springcloud-consumer</module>
+        <module>springcloud-service</module>
+        <module>springcloud-admin</module>
+    </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
@@ -17,13 +32,21 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.encoding>UTF-8</project.build.encoding>
-        <spring.boot.version>1.4.3.RELEASE</spring.boot.version>
+        <!--<spring.boot.version>1.4.3.RELEASE</spring.boot.version>
+        <spring.cloud.version>Camden.SR3</spring.cloud.version>-->
+        <spring.boot.version>2.0.2.RELEASE</spring.boot.version>
+        <spring.cloud.version>Finchley.RELEASE</spring.cloud.version>
+        <srping.cloud.admin>2.0.2</srping.cloud.admin>
+        <swagger2.version>2.6.1</swagger2.version>
+        <jolokia.version>1.6.0</jolokia.version>
+        <srping.admin.login>1.5.7</srping.admin.login>
         <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
         <maven-war-plugin.version>3.0.0</maven-war-plugin.version>
         <maven-resources-plugin.version>2.6</maven-resources-plugin.version>
     </properties>
     <dependencyManagement>
         <dependencies>
+            <!-- springboot使用-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -31,8 +54,51 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- springcloud相关组件使用-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- swagger2 api文档生成-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger2.version}</version>
+            </dependency>
+
+            <!-- springcloud admin平台-->
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-server</artifactId>
+                <version>${srping.cloud.admin}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server-ui</artifactId>
+                <version>${srping.cloud.admin}</version>
+            </dependency>
+            <!-- server端登录功能需要-->
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-server-ui-login</artifactId>
+                <version>${srping.admin.login}</version>
+            </dependency>
+
+            <!--接入Eureka需要引入 -->
+            <dependency>
+                <groupId>org.jolokia</groupId>
+                 <artifactId>jolokia-core</artifactId>
+                <version>${jolokia.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-
 
 </project>

@@ -1,0 +1,25 @@
+
+eureka:
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://${spring.cloud.client.ip-address}:8761/eureka/
+
+server:
+  port: 8769
+
+spring:
+  application:
+    name: springcloud-zuul
+
+#通过 serviceId 映射：
+zuul:
+  routes:  #路径列表，自定义名称，建议与微服务名相同
+    springcloudservice:
+      path: /api/**   # 以/api/开头的请求会被转发到springcloud-service服务,/api/在最终匹配的url中会被抽出
+      serviceId: springcloud-service
+
+logging:
+  path: /data/studying/spring-clound/
