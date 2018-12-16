@@ -1,0 +1,48 @@
+package com.jwx.studying.common.utils;
+
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+
+/**
+ * Description: Spring获取上下文工具类
+ * <p>
+ * PackageName:com.jwx.studying.common.utils
+ * FileName: SpringUtils.java
+ * Copyright: Copyright (c)2018. songxiaocai
+ *
+ * @author jiwenxiang@songxiaocai.com
+ * @version 1.0, 2018/11/20
+ */
+public class SpringUtils implements ApplicationContextAware {
+
+    private static ApplicationContext applicationContext;
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        if(SpringUtils.applicationContext == null) {
+            SpringUtils.applicationContext = applicationContext;
+        }
+    }
+
+    //获取applicationContext
+    public static ApplicationContext getApplicationContext() {
+        return applicationContext;
+    }
+
+    //通过name获取 Bean.
+    public static Object getBean(String name){
+        return getApplicationContext().getBean(name);
+    }
+
+    //通过class获取Bean.
+    public static <T> T getBean(Class<T> clazz){
+        return getApplicationContext().getBean(clazz);
+    }
+
+    //通过name,以及Clazz返回指定的Bean
+    public static <T> T getBean(String name,Class<T> clazz){
+        return getApplicationContext().getBean(name, clazz);
+    }
+
+}

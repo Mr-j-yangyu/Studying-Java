@@ -6,29 +6,51 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dubbo-admin" />
+        <module name="dubbo-client" />
+        <module name="dubbo-consumer" />
+        <module name="dubbo-provider" />
+        <module name="springcloud-admin" />
+        <module name="springcloud-consumer" />
+        <module name="springcloud-eureka" />
+        <module name="springcloud-feignclient" />
+        <module name="springcloud-server" />
+        <module name="springcloud-service" />
+        <module name="springcloud-zuul" />
         <module name="studying-algorithm" />
         <module name="studying-common" />
-        <module name="studying-dubbo" />
-        <module name="studying-else" />
+        <module name="studying-design" />
         <module name="studying-guava" />
         <module name="studying-java8" />
+        <module name="studying-jdk" />
         <module name="studying-redis" />
-        <module name="studying-springclound" />
+        <module name="studying-spring" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
+      <module name="dubbo-admin" target="1.8" />
+      <module name="dubbo-client" target="1.8" />
+      <module name="dubbo-consumer" target="1.8" />
+      <module name="dubbo-provider" target="1.8" />
+      <module name="springcloud-admin" target="1.8" />
+      <module name="springcloud-consumer" target="1.8" />
+      <module name="springcloud-eureka" target="1.8" />
+      <module name="springcloud-feignclient" target="1.8" />
+      <module name="springcloud-service" target="1.8" />
+      <module name="springcloud-zuul" target="1.8" />
       <module name="studying-algorithm" target="1.8" />
       <module name="studying-base" target="1.8" />
       <module name="studying-common" target="1.8" />
-      <module name="studying-database" target="1.5" />
-      <module name="studying-dubbo" target="1.5" />
-      <module name="studying-else" target="1.8" />
+      <module name="studying-database" target="1.8" />
+      <module name="studying-design" target="1.8" />
+      <module name="studying-dubbo" target="1.8" />
       <module name="studying-guava" target="1.8" />
       <module name="studying-java8" target="1.8" />
+      <module name="studying-jdk" target="1.8" />
       <module name="studying-parent" target="1.5" />
-      <module name="studying-redis" target="1.5" />
-      <module name="studying-springclound" target="1.5" />
-      <module name="studyingalgorithm" target="1.8" />
+      <module name="studying-redis" target="1.8" />
+      <module name="studying-spring" target="1.8" />
+      <module name="studying-springclound" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

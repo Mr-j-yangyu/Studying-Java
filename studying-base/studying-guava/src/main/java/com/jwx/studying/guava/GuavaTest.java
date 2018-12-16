@@ -2,13 +2,16 @@ package com.jwx.studying.guava;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.base.*;
+import com.google.common.base.Optional;
 import com.google.common.collect.*;
 import com.jwx.studying.guava.entity.Student;
 import sun.net.dns.ResolverConfiguration.Options;
 
 import javax.swing.text.html.Option;
-import java.util.List;
-import java.util.Map;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
@@ -170,7 +173,7 @@ public class GuavaTest {
         biMap.put("星期二","Tuesday");
         biMap.put("星期三","Wednesday");
         System.out.println("星期一的英文名是" + biMap.get("星期一"));
-        System.out.println("Monday的中文是" + biMap.inverse().get("Monday"));
+        System.out.println("Monday的中文 是" + biMap.inverse().get("Monday"));
 
         //一键多值的Map，Map<K, Collection<V>>
         Multimap<String, String> myMultimap = ArrayListMultimap.create();
@@ -185,22 +188,41 @@ public class GuavaTest {
                       table.put(row, column, "value of cell (" + row + "," + column + ")");
              }
         }
-        System.out.println(table.get(1,2));
+
+        table.row(12);
+
+        System.out.println( table.row(12).get(1));
 
 
         //list转为Multimap
         List<Student> list =Lists.newArrayList(new Student(1,"ji"),new Student(2,"wen"),new Student(3,"xiang"));
         //ListMultimap
-        ImmutableListMultimap<Integer,Student>  m= Multimaps.index(list,Student::getId);
-        Map m2 =list.stream().collect(Collectors.groupingBy(Student::getId));
-    }
+        ListMultimap<Integer,Student>  m= Multimaps.index(list,Student::getId);
+        List<Student> l = new ArrayList<Student>();
+        list.stream().collect(Collectors.groupingBy(Student::getId));
+
+      System.out.println(l.stream().sorted(Comparator.comparing(Student::getId).reversed()).collect(Collectors.toList()));
+
+      }
 
 
     public static void main(String[] args){
-        new GuavaTest() //._Optional();
+      /*  new GuavaTest() //._Optional();
                         //._Preconditions();
-                        //._Joiner();
+                        ._Joiner();
                         //._Splitter();
-                        ._CollectionTool();
+                        //._CollectionTool();
+        List<Integer> successRecords = new LinkedList<>();
+
+        Map<Integer,List> map = new HashMap();
+        map.put(1,Lists.newArrayList(1,2));
+        System.out.println(map.get(1).contains(null));
+
+        Map<Integer,List<Integer>> maps =Maps.newHashMap();
+                System.out.println( maps.get(1).contains(1));*/
+
+      String  ab = "{\"job\":\"种植户,小贩\"}";
+
+        System.out.println(16/10 *10);
     }
 }

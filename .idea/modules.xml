@@ -2,18 +2,29 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/studying-dubbo/dubbo-admin/dubbo-admin.iml" filepath="$PROJECT_DIR$/studying-dubbo/dubbo-admin/dubbo-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-dubbo/dubbo-client/dubbo-client.iml" filepath="$PROJECT_DIR$/studying-dubbo/dubbo-client/dubbo-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-dubbo/dubbo-consumer/dubbo-consumer.iml" filepath="$PROJECT_DIR$/studying-dubbo/dubbo-consumer/dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-dubbo/dubbo-provider/dubbo-provider.iml" filepath="$PROJECT_DIR$/studying-dubbo/dubbo-provider/dubbo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-springclound/springcloud-admin/springcloud-admin.iml" filepath="$PROJECT_DIR$/studying-springclound/springcloud-admin/springcloud-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-springclound/springcloud-consumer/springcloud-consumer.iml" filepath="$PROJECT_DIR$/studying-springclound/springcloud-consumer/springcloud-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-springclound/springcloud-eureka/springcloud-eureka.iml" filepath="$PROJECT_DIR$/studying-springclound/springcloud-eureka/springcloud-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-springclound/springcloud-feignclient/springcloud-feignclient.iml" filepath="$PROJECT_DIR$/studying-springclound/springcloud-feignclient/springcloud-feignclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-springclound/springcloud-service/springcloud-service.iml" filepath="$PROJECT_DIR$/studying-springclound/springcloud-service/springcloud-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-springclound/springcloud-zuul/springcloud-zuul.iml" filepath="$PROJECT_DIR$/studying-springclound/springcloud-zuul/springcloud-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/studying-base/studying-algorithm/studying-algorithm.iml" filepath="$PROJECT_DIR$/studying-base/studying-algorithm/studying-algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/studying-base/studying-base.iml" filepath="$PROJECT_DIR$/studying-base/studying-base.iml" />
       <module fileurl="file://$PROJECT_DIR$/studying-base/studying-common/studying-common.iml" filepath="$PROJECT_DIR$/studying-base/studying-common/studying-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/studying-database/studying-database.iml" filepath="$PROJECT_DIR$/studying-database/studying-database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-design/studying-design.iml" filepath="$PROJECT_DIR$/studying-design/studying-design.iml" />
       <module fileurl="file://$PROJECT_DIR$/studying-dubbo/studying-dubbo.iml" filepath="$PROJECT_DIR$/studying-dubbo/studying-dubbo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/studying-base/studying-else/studying-else.iml" filepath="$PROJECT_DIR$/studying-base/studying-else/studying-else.iml" />
       <module fileurl="file://$PROJECT_DIR$/studying-base/studying-guava/studying-guava.iml" filepath="$PROJECT_DIR$/studying-base/studying-guava/studying-guava.iml" />
       <module fileurl="file://$PROJECT_DIR$/studying-base/studying-java8/studying-java8.iml" filepath="$PROJECT_DIR$/studying-base/studying-java8/studying-java8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-base/studying-jdk/studying-jdk.iml" filepath="$PROJECT_DIR$/studying-base/studying-jdk/studying-jdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/studying-parent.iml" filepath="$PROJECT_DIR$/studying-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/studying-database/studying-redis/studying-redis.iml" filepath="$PROJECT_DIR$/studying-database/studying-redis/studying-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/studying-base/studying-spring/studying-spring.iml" filepath="$PROJECT_DIR$/studying-base/studying-spring/studying-spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/studying-springclound/studying-springclound.iml" filepath="$PROJECT_DIR$/studying-springclound/studying-springclound.iml" />
-      <module fileurl="file://$PROJECT_DIR$/studying-base/studyingalgorithm.iml" filepath="$PROJECT_DIR$/studying-base/studyingalgorithm.iml" />
     </modules>
   </component>
 </project>

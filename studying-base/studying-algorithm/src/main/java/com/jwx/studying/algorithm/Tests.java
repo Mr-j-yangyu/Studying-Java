@@ -41,5 +41,6 @@ public class Tests {
        List originList =  Lists.newArrayList(0,1,2,3);
        List mergeList =  Lists.newArrayList(1,3,4,5,6,7));
       a.merge(tempList,originList,mergeList);*/
+
     }
 }

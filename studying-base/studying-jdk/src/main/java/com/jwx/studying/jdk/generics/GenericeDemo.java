@@ -1,8 +1,12 @@
 package com.jwx.studying.jdk.generics;
 
+import com.google.common.collect.Lists;
+import jdk.nashorn.internal.ir.debug.ObjectSizeCalculator;
+
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.LinkedList;
 import java.util.List;
 
 /**

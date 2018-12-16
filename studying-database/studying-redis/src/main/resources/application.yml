@@ -1,0 +1,38 @@
+spring.application.name: studying-redis
+spring.profiles.active: local
+logging.path: /data/studying/styding-redis
+#日志文件输出级别
+logging.level.root: info
+#采用彩色输出（推荐项）
+spring.output.ansi.enabled: DETECT
+
+# info信息
+info.app.name: ${spring.application.name}
+info.app.profiles: ${spring.profiles.active}
+
+server:
+  port: 9210
+
+
+# spring.redis.sentinel.master: mymaster
+# spring.redis.sentinel.nodes: 127.0.0.1:6379,127.0.0.1:6380,127.0.0.1:6381
+# spring.redis.password: jwxredis
+
+# Redis数据库索引（默认为0）
+spring.redis.database: 0
+# Redis服务器地址
+spring.redis.host: 192.168.0.58
+# Redis服务器连接端口
+spring.redis.port: 6379
+# Redis服务器连接密码（默认为空）
+spring.redis.password: jwxredis
+# 连接池最大连接数（使用负值表示没有限制）
+spring.redis.pool.: 8
+# 连接池最大阻塞等待时间（使用负值表示没有限制）
+spring.redis.jedispool.max-wait: -1
+# 连接池中的最大空闲连接
+spring.redis.jedispool.max-idle=: 8
+# 连接池中的最小空闲连接
+spring.redis.jedispool.min-idle: 0
+# 连接超时时间（毫秒）
+spring.redis.timeout: 10000ms

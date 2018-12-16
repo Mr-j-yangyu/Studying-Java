@@ -10,9 +10,11 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/studying-base/pom.xml" />
+        <option value="$PROJECT_DIR$/studying-base/studying-else/pom.xml" />
         <option value="$PROJECT_DIR$/studying-database/pom.xml" />
         <option value="$PROJECT_DIR$/studying-database/studying-mongo/pom.xml" />
         <option value="$PROJECT_DIR$/studying-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/studying-springclound/springcloud-server/pom.xml" />
         <option value="$PROJECT_DIR$/studyingdatabase/pom.xml" />
       </set>
     </option>
