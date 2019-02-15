@@ -1,0 +1,36 @@
+spring.application.name: studying-mongodb
+spring.profiles.active: local
+logging.path: /data/studying/styding-mongodb
+#日志文件输出级别
+logging.level.root: info
+#采用彩色输出（推荐项）
+spring.output.ansi.enabled: DETECT
+
+# info信息
+info.app.name: ${spring.application.name}
+info.app.profiles: ${spring.profiles.active}
+
+server:
+  port: 9215
+
+spring:
+  data:
+    mongodb:
+
+        host: 127.0.0.1:27017
+        username: jwxmongodb
+        password: jwxmongodb
+        database: test
+        authentication-database: admin
+      second:
+        host: 127.0.0.1:27018
+        username: jwxmongodb
+        password: jwxmongodb
+        database: test2
+        authentication-database:
+      connectionsPerHost: 10
+      options:
+        min-connections-per-host: 8
+        threads-allowed-to-block-for-connection-multiplier: 4
+        max-wait-time: 1500
+        socket-timeout: 1500

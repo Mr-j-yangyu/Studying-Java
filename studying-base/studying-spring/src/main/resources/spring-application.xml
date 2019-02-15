@@ -14,6 +14,6 @@
     <aop:aspectj-autoproxy/>
 
     <!-- <context:component-scan base-package="MockService"/>-->
-    <context:component-scan base-package="com.jwx.studying.spring.FactoryBean"/>
+    <context:component-scan base-package="com.jwx.studying.spring.LoadingOrder"/>
 
 </beans>

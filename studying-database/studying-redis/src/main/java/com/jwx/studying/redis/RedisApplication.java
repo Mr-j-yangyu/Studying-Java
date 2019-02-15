@@ -18,6 +18,5 @@ public class RedisApplication {
 
     public static void main(String[] args) throws Exception {
         SpringApplication.run(RedisApplication.class, args);
-
     }
 }

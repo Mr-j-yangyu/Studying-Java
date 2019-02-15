@@ -1,6 +1,6 @@
-spring.application.name: studying-redis
+spring.application.name: studying-mongo
 spring.profiles.active: local
-logging.path: /data/studying/styding-redis
+logging.path: /data/studying/styding-mongo
 #日志文件输出级别
 logging.level.root: info
 #采用彩色输出（推荐项）

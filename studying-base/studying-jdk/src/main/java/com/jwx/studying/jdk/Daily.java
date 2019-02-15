@@ -51,40 +51,42 @@ public class Daily {
         Daily.printSize("new ArrayList",  ObjectSizeCalculator.getObjectSize(new ArrayList<Integer>()));
         Daily.printSize("Lists.newArrayList",  ObjectSizeCalculator.getObjectSize(Lists.newArrayList()));
 
-*/        ArrayList<String> arraylist = new ArrayList<String>();
-        LinkedList<String> linkedlist = new LinkedList<String>();
-        Random random = new Random();
-        long begin = System.currentTimeMillis();
-        for(int i=0;i<5000;i++){
-            arraylist.add(Long.toString(random.nextLong(), 36));
-        }
-        System.out.println("arraylist add(n) time "+(System.currentTimeMillis()-begin));
+*/
+//        ArrayList<String> arraylist = new ArrayList<String>();
+//        LinkedList<String> linkedlist = new LinkedList<String>();
+//        Random random = new Random();
+//        long begin = System.currentTimeMillis();
+//        for(int i=0;i<5000;i++){
+//            arraylist.add(Long.toString(random.nextLong(), 36));
+//        }
+//        System.out.println("arraylist add(n) time "+(System.currentTimeMillis()-begin));
+//
+//
+//        begin = System.currentTimeMillis();
+//        for(int j=0;j<5000;j++){
+//            linkedlist.add(Long.toString(random.nextLong(), 36));
+//        }
+//        System.out.println("linkedlist add(n) time "+(System.currentTimeMillis()-begin));
+//
+//        begin = System.currentTimeMillis();
+//        for(String s:arraylist){
+//        }
+//        System.out.println("arraylist for time "+(System.currentTimeMillis()-begin));
+//
+//        begin = System.currentTimeMillis();
+//        for(String s:linkedlist){
+//        }
+//        System.out.println("linkedlist for time "+(System.currentTimeMillis()-begin));
+//
+//        begin = System.currentTimeMillis();
+//        arraylist.stream().forEach(e->{});
+//        System.out.println("arraylist foreach time "+(System.currentTimeMillis()-begin));
+//
+//        begin = System.currentTimeMillis();
+//        linkedlist.stream().forEach(e->{});
+//        System.out.println("linkedlist foreach time "+(System.currentTimeMillis()-begin));
 
-
-        begin = System.currentTimeMillis();
-        for(int j=0;j<5000;j++){
-            linkedlist.add(Long.toString(random.nextLong(), 36));
-        }
-        System.out.println("linkedlist add(n) time "+(System.currentTimeMillis()-begin));
-
-        begin = System.currentTimeMillis();
-        for(String s:arraylist){
-        }
-        System.out.println("arraylist for time "+(System.currentTimeMillis()-begin));
-
-        begin = System.currentTimeMillis();
-        for(String s:linkedlist){
-        }
-        System.out.println("linkedlist for time "+(System.currentTimeMillis()-begin));
-
-        begin = System.currentTimeMillis();
-        arraylist.stream().forEach(e->{});
-        System.out.println("arraylist foreach time "+(System.currentTimeMillis()-begin));
-
-        begin = System.currentTimeMillis();
-        linkedlist.stream().forEach(e->{});
-        System.out.println("linkedlist foreach time "+(System.currentTimeMillis()-begin));
-
+       System.out.println(Float.valueOf(2212313)/100);
     }
 
 }

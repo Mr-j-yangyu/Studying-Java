@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>studying-redis</module>
+        <module>studying-mongodb</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -24,6 +25,8 @@
         <project.build.encoding>UTF-8</project.build.encoding>
         <spring.boot.version>2.0.2.RELEASE</spring.boot.version>
         <jedis.version>2.9.0</jedis.version>
+        <guava.version>18.0</guava.version>
+        <fastjson.version>1.2.8</fastjson.version>
     </properties>
 
     <dependencyManagement>
@@ -42,6 +45,17 @@
                 <artifactId>jedis</artifactId>
                 <version>${jedis.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
